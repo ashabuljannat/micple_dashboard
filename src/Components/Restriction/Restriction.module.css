@@ -1,0 +1,50 @@
+.sub{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    margin-left: 40%;
+}
+.sub input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    outline: none;
+}
+ button{
+    width: 70px;
+    height: 25px;
+    background-color:  rgb(37, 167, 248);
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.main{
+    padding: 0 20px;
+}
+.key{
+    display: flex;
+    flex-direction: row;
+  
+    justify-content: space-between;
+   
+}
+.key span{
+    font-size: 25px;
+    font-weight: 600;
+}
+.form{
+    display: flex;
+    align-items: center;
+    background-color:  rgb(37, 167, 248);
+    width: 350px;
+}
+.form input{
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    outline: none;
+    
+
+}

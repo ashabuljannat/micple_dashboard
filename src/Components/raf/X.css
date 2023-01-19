@@ -1,0 +1,58 @@
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* width: 35px;
+height: 35px;  */
+}
+
+.progress-bg {
+  fill: none;
+  stroke: #f3f3f3;
+  stroke-width: 16;
+  stroke-linecap: round;
+}
+
+.progress-bar {
+  fill: none;
+  stroke: #3498db;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 0 100;
+  transform: rotate(20deg);
+  transform-origin: center;
+  animation: progress 10s linear forwards;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 100 100;
+  }
+  100% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.cancel-button {
+position: absolute; 
+ width: 15px;
+height: 15px;
+}
+
+.start-button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+svg {
+  width: 25px;
+  height: 25px;
+}
+
+.progress-bg,
+.progress-bar {
+  stroke-width: 10;
+}

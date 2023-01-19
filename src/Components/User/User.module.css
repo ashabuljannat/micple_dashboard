@@ -1,0 +1,79 @@
+.user {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+ 
+}
+
+.sidebar {
+  /* background-color: rgb(255, 148, 148); */
+}
+.menu {
+  width: 100%;
+  padding: 0 20px;
+}
+.tableNav{
+  height: 40px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 25px;
+  /* background-color: rgb(255, 148, 148); */
+}
+.nav {
+  height: 40px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  /*
+  margin-left: 20px; */
+  /* background-color: rgb(255, 148, 148); */
+}
+
+.nav span{
+  width: 130px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  border-radius: 2px;
+  /* background-color: #ffffff; */
+  box-shadow: 1px 1px 2px #6699f2;
+}
+
+.nav span:hover {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.active_tabs {
+  background-color: #0c5be2;
+  color: #ffffff;
+}
+.content span {
+  display: none;
+  padding: 0 10px; 
+}
+.content .active_content {
+  display: block;
+}
+.filCity {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.filCity h2 {
+  margin-right: 30%;
+}
+
+.fTable {
+  display: flex;
+  height: 20px;
+}
+
+tbody,
+td,
+th,
+tr {
+  text-align: center;
+  background-color: #ffffff;
+}

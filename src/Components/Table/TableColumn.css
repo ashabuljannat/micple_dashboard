@@ -1,0 +1,18 @@
+.clicked {
+  background-color: #2d6cd9;
+  color: #fff;
+} 
+.t_c_Title {
+  cursor: pointer; 
+  height: 20px;
+  width: 200px;
+  border: 1px solid #dddddd;
+  padding: 6px;
+  transition: 0.3s; 
+}
+
+.t_c_Data {
+  font-size: 14px;
+  font-weight: 500;
+ 
+}

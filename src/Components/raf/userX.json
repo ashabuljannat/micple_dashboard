@@ -1,0 +1,14 @@
+{
+    "key_id": "54320",
+    "status": "banned",
+    "gender": "male",
+    "birth":"25/12/1973",
+    "name": "Asim Ali",
+    "email": "asimali@email.com",
+    "phone": "555-555-5569",
+    "city": "Quetta",
+    "state": "Balochistan",
+    "country": "Pakistan",
+    "postcode": "36912",
+    "picture": "https://example.com/asimali.jpg"
+}
