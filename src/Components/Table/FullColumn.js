@@ -56,9 +56,9 @@ export const FullColumn = ({
           <tr>
             <th className={styles.taTitle}>
               {name}
-              <div style={{marginLeft:'10px'}}>
-                {country&& isLoading ? (
-                  <span className={styles.loaderContainer}>
+              <div style={{ marginLeft: "5px" }}>
+                {name === "Country" && isLoading ? (
+                  <div className={styles.loaderContainer}>
                     <svg viewBox="0 0 36 36">
                       <path
                         className={styles.progressBg}
@@ -78,9 +78,9 @@ export const FullColumn = ({
                       onClick={cancelLoading}
                       className={styles.cancelButton}
                     />
-                  </span>
+                  </div>
                 ) : (
-                  country && (
+                  name === "Country" && (
                     <BiReset className={styles.reset} onClick={startLoading} />
                   )
                 )}

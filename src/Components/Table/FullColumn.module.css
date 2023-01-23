@@ -1,20 +1,21 @@
 .table2 {
   /* height: auto;
   width: 200px; */
-  text-align: center;
+  /* text-align: center; */
 }
 table {
-  text-align: center;
+  /* text-align: center; */
   border-collapse: collapse;
   margin-top: 50px;
 }
 .taTitle {
-  text-align: center;
+  /* text-align: center; */
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
 }
-th {
-  
+th {  
   border: 1px solid #dddddd;
   padding: 8px;
 }
@@ -26,7 +27,7 @@ td {
 }
 
 .reset {
-  color: #3498db;
+  color: black;
   margin-left: 15px;
   width: 20px;
   height: 20px;
@@ -72,7 +73,7 @@ height: 35px;  */
   position: absolute;
   width: 15px;
   height: 15px;
-  color: red;
+  color: #2971e4;
 }
 
 svg {

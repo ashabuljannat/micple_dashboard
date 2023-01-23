@@ -270,16 +270,77 @@ Your API Key: a61cfafb-231f-4371-a536-5a79bafaaa51
 || item.email.toLowerCase().includes(searchTerm.toLowerCase());
 
 
+  let intervalId;
+  const startLoading = () => {
+    setIsLoading(true);
+    setProgress(0);
+    intervalId = setInterval(() => {
+      setProgress((prevProgress) => {
+        if (prevProgress === 100) {
+          clearInterval(intervalId);
+          setIsLoading(false);
+          setFirst([]);
+          setFirst1([]);
+          return 0;
+        }
+        return prevProgress + 10;
+      });
+    }, 1000);
+  };
+
+  const cancelLoading = () => {
+    clearInterval(intervalId);
+    setIsLoading(false);
+    setProgress(true);
+  };
+
+   <div>
+        {isLoading ? (
+          <div className="loader-container">
+            <svg viewBox="0 0 36 36">
+              <path
+                className="progress-bg"
+                d="M 18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path
+                className="progress-bar"
+                strokeDasharray={`${progress}, 100`}
+                d="M 18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+
+            <MdOutlineCancel
+              onClick={cancelLoading}
+              color="red"
+              className="cancel-button"
+            />
+          </div> 
+        ) : (
+          <button className="start-button" onClick={startLoading}>
+            Start
+          </button>
+        )}
+      </div>
+
+   console.log(e.target.value);
+    setSearchText(e.target.value);
+    console.log(searchText);
 
 
+const filteredData = 
 
+    const filteredData = dataArray.filter(item => {
+      return item.name.toLowerCase().includes(searchText.toLowerCase());
+    });
+    setSearchResults(filteredData);
 
-
-
-
-
-
-
+          const filteredData = dataArray.filter(item => {
+            return item.name.toLowerCase().includes(searchText.toLowerCase());
+          });
 
 
 

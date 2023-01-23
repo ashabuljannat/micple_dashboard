@@ -1,0 +1,340 @@
+[
+    {
+        "id": 1,
+        "country_name": "Australia",
+        "total_Mail_count": 13,
+        "state": [
+            {
+                "State_name": "Victoria",
+                "state_user_count": 3,
+                "city": [
+                    {
+                        "city_name": "sunbury",
+                        "city_user_count": 2,
+                        "user_report": [
+                            {
+                                "id": 1,
+                                "user_id": "saddam01",
+                                "reports": [
+                                    {
+                                        "id": 42343,
+                                        "user_id": "saddam01",
+                                        "user_name": "saddam Khan",
+                                        "ip": "121.123.121.453",
+                                        "report_sub": "forget Password",
+                                        "post_id": "345656789090",
+                                        "comment": "extra and bed word use",
+                                        "claim_id": "abc01",
+                                        "claim_name": "anusur",
+                                        "status": "panding",
+                                        "claim": [
+                                            {
+                                                "country_name": "Australia",
+                                                "State_name": "Victoria",
+                                                "city_name": "sunbury",
+                                                "user_id": "saddam01",
+                                                "user_name": "saddam Khan",
+                                                "claim_name": "anusur",
+                                                "claim_id": "abc02",
+                                                "reportr_Issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ",
+                                                "claim_issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": 42343,
+                                        "user_id": "saddam01",
+                                        "user_name": "saddam Khan",
+                                        "ip": "121.123.121.453",
+                                        "post_id": "123456789",
+                                        "report_sub": "forget mail",
+                                        "repoter_issue": "012341587",
+                                        "comment": "extra word use",
+                                        "claim_id": "abc02",
+                                        "claim_name": "anusur",
+                                        "status": "panding",
+                                        "claim": [
+                                            {
+                                                "user_id": "saddam01",
+                                                "claim_name": "anusur",
+                                                "claim_id": "abc02",
+                                                "reportr_Issue": "industry's standard dummy text ever since the 1500s ",
+                                                "claim_issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "user_id": "sdf33423",
+                                "reports": [
+                                    {
+                                        "id": 23213,
+                                        "user_id": "saddam01",
+                                        "user_name": "kabir sing",
+                                        "ip": "111.233.121.453",
+                                        "post_id": "123456789",
+                                        "report_sub": "forget mail",
+                                        "repoter_issue": "012341587",
+                                        "comment": "extra word use",
+                                        "claim_id": "abc04",
+                                        "claim_name": "anusur haque",
+                                        "status": "panding",
+                                        "claim": [
+                                            {
+                                                "user_id": "sdf33423",
+                                                "claim_id": "abc04",
+                                                "reportr_Issue": "industry's standard dummy text ever since the 1500s ",
+                                                "claim_issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "city_name": "seaford",
+                        "city_user_count": 1,
+                        "user_report": [
+                            {
+                                "id": 23,
+                                "user_id": "sasf234",
+                                "reports": [
+                                    {
+                                        "id": 4532,
+                                        "user_name": "salman",
+                                        "user_id": "sasf23",
+                                        "ip": "221.543.121.453",
+                                        "post_id": "123456789",
+                                        "report_sub": "forget mail",
+                                        "repoter_issue": "012341587",
+                                        "comment": "extra word use",
+                                        "claim_id": "abc04",
+                                        "claim_name": "haque",
+                                        "status": "panding",
+                                        "claim": [
+                                            {
+                                                "user_id": "sasf23",
+                                                "claim_id": "abc04",
+                                                "reportr_Issue": "industry's standard dummy text ever since the 1500s ",
+                                                "claim_issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "State_name": "Tasmaniea",
+                "state_user_count": 5,
+                "city": [
+                    {
+                        "city_name": "Hobart",
+                        "city_user_count": 2,
+                        "user_report": [
+                            {
+                                "id": 23,
+                                "user_id": "sasf235",
+                                "reports": [
+                                    {
+                                        "id": 4532,
+                                        "user_name": "muktadir",
+                                        "ip": "211.543.121.453",
+                                        "post_id": "123456789",
+                                        "report_sub": "forget mail",
+                                        "repoter_issue": "012341587",
+                                        "comment": "extra word use",
+                                        "status": "panding",
+                                        "reportr_Issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ",
+                                        "claimer": {
+                                            "claim_id": "abc02",
+                                            "claim_name": "anusur",
+                                            "claim_issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s "
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "city_name": "Burnia",
+                        "city_user_count": 3,
+                        "user_report": [
+                            {
+                                "id": 23,
+                                "user_id": "sasf236",
+                                "reports": [
+                                    {
+                                        "id": 4532,
+                                        "user_name": "aslam",
+                                        "user_id": "sasf23",
+                                        "ip": "221.543.121.453",
+                                        "post_id": "123456789",
+                                        "report_sub": "forget mail",
+                                        "repoter_issue": "012341587",
+                                        "comment": "extra word use",
+                                        "reportr_Issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ",
+                                        "claimer": {
+                                            "claim_id": "abc02",
+                                            "claim_name": "anusur",
+                                            "claim_issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s "
+                                        }
+                                    },
+                                    {
+                                        "id": 23432,
+                                        "user_name": "aslam",
+                                        "user_id": "sasf23",
+                                        "ip": "221.543.121.452",
+                                        "post_id": "123456789",
+                                        "report_sub": "forget mail",
+                                        "repoter_issue": "012341587",
+                                        "comment": "extra word use",
+                                        "reportr_Issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ",
+                                        "claimer": {
+                                            "claim_id": "abc02",
+                                            "claim_name": "anusur",
+                                            "claim_issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s "
+                                        }
+                                    },
+                                    {
+                                        "id": 234,
+                                        "user_name": "aslam",
+                                        "user_id": "sasf23",
+                                        "ip": "221.543.121.452",
+                                        "post_id": "123456789",
+                                        "report_sub": "forget mail",
+                                        "repoter_issue": "012341587",
+                                        "comment": "extra word use",
+                                        "reportr_Issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ",
+                                        "claimer": {
+                                            "claim_id": "abc02",
+                                            "claim_name": "anusur",
+                                            "claim_issue": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s "
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "State_name": "Almond",
+                "state_user_count": 5,
+                "city": [
+                    {
+                        "city_name": "kerel",
+                        "city_user_count": 2
+                    },
+                    {
+                        "city_name": "vusal",
+                        "city_user_count": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "country_name": "Bangladesh",
+        "total_Mail_count": 10,
+        "state": [
+            {
+                "State_name": "Ctg",
+                "state_user_count": 3,
+                "city": [
+                    {
+                        "city_name": "Raozan",
+                        "city_user_count": 2
+                    },
+                    {
+                        "city_name": "Hathajari",
+                        "city_user_count": 1
+                    }
+                ]
+            },
+            {
+                "State_name": "Dhaka",
+                "state_user_count": 5,
+                "city": [
+                    {
+                        "city_name": "kelketh",
+                        "city_user_count": 2
+                    },
+                    {
+                        "city_name": "uttora",
+                        "city_user_count": 3
+                    }
+                ]
+            },
+            {
+                "State_name": "Kustia",
+                "state_user_count": 2,
+                "city": [
+                    {
+                        "city_name": "kalihati",
+                        "city_user_count": 1
+                    },
+                    {
+                        "city_name": "moulovi bazaer",
+                        "city_user_count": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "country_name": "India",
+        "total_Mail_count": 15,
+        "state": [
+            {
+                "State_name": "Dheli",
+                "state_user_count": 6,
+                "city": [
+                    {
+                        "city_name": "Firozobad",
+                        "city_user_count": 4
+                    },
+                    {
+                        "city_name": "Jahanpanah",
+                        "city_user_count": 2
+                    }
+                ]
+            },
+            {
+                "State_name": "West Bangle",
+                "state_user_count": 5,
+                "city": [
+                    {
+                        "city_name": "Kolkata",
+                        "city_user_count": 3
+                    },
+                    {
+                        "city_name": "Siliguri",
+                        "city_user_count": 2
+                    }
+                ]
+            },
+            {
+                "State_name": "South India",
+                "state_user_count": 4,
+                "city": [
+                    {
+                        "city_name": "Chennai",
+                        "city_user_count": 2
+                    },
+                    {
+                        "city_name": "Vijayawada",
+                        "city_user_count": 2
+                    }
+                ]
+            }
+        ]
+    }
+]

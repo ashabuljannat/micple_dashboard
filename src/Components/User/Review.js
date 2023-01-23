@@ -11,8 +11,7 @@ const Review = ({ allCountryUser }) => {
   const [user, setUser] = useState([]);
   // console.log(allCountryUser)
 
-
-useEffect(() => {
+  useEffect(() => {
     if (allCountryUser) {
       const all = allCountryUser?.map((user) => user.country);
       // console.log(all)
@@ -21,7 +20,7 @@ useEffect(() => {
       setUniCountry(res);
     }
   }, []);
-  
+
   // console.log(uniCountry);
 
   const filterState = (e) => {
@@ -49,7 +48,7 @@ useEffect(() => {
     const filter = allCountryUser?.filter((item) => item.city === e);
     setUser(filter);
   };
- 
+
   return (
     <>
       <div className={styles.user}>
@@ -63,16 +62,15 @@ useEffect(() => {
               <div className={styles.fTable}>
                 <FullColumn
                   name={"Country"}
-                  country={uniCountry}              
+                  country={uniCountry}
                   filterState={filterState}
-                  
                 />
                 <FullColumn
                   name={"State"}
                   state={state}
                   setState={setState}
                   setCity={setCity}
-                  setUser={setUser}                  
+                  setUser={setUser}
                   filterCity={filterCity}
                 />
                 <FullColumn name={"City"} city={city} filterUser={filterUser} />

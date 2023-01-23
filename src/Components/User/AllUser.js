@@ -12,9 +12,6 @@ import {
 import InputName from "../Filter/InputName";
 import InputBirth from "../Filter/InputBirth";
 
-
-
-
 const AllUser = () => {
   const review = UnderReview();
   const approved = Approved();
@@ -39,52 +36,64 @@ const AllUser = () => {
 
   // console.log(review);
   return (
-    <div className={styles.user}>  
+    <div className={styles.user}>
       <div className={styles.sidebar}></div>
       <div className={styles.menu}>
         <div className={styles.tableNav}>
           <div className={styles.nav}>
-            <span
-              className={toggleState === 1 && styles.active_tabs}
-              onClick={() => toggleTab(1)}
-            >
-              Under Review ({review?.length})
-            </span>
-            <span
-              className={toggleState === 2 && styles.active_tabs}
-              onClick={() => toggleTab(2)}
-            >
-              Approved ({approved?.length})
-            </span>
-            <span
-              className={toggleState === 3 && styles.active_tabs}
-              onClick={() => toggleTab(3)}
-            >
-              Verified ({verified?.length})
-            </span>
-            <span
-              className={toggleState === 4 && styles.active_tabs}
-              onClick={() => toggleTab(4)}
-            >
-              Rejected ({rejected?.length})
-            </span>
-            <span
-              className={toggleState === 5 && styles.active_tabs}
-              onClick={() => toggleTab(5)}
-            >
-              Banned ({banned?.length})
-            </span>
-            <span
-              className={toggleState === 6 && styles.active_tabs}
-              onClick={() => toggleTab(6)}
-            >
-              All ({all?.length})
-            </span>
+            <div className={styles.navItem}>
+              <span
+                className={toggleState === 1 && styles.active_tabs}
+                onClick={() => toggleTab(1)}
+              >
+                Under Review ({review?.length})
+              </span>
+            </div>
+            <div className={styles.navItem}>
+              <span
+                className={toggleState === 2 && styles.active_tabs}
+                onClick={() => toggleTab(2)}
+              >
+                Approved ({approved?.length})
+              </span>
+            </div>
+            <div className={styles.navItem}>
+              <span
+                className={toggleState === 3 && styles.active_tabs}
+                onClick={() => toggleTab(3)}
+              >
+                Verified ({verified?.length})
+              </span>
+            </div>
+            <div className={styles.navItem}>
+              <span
+                className={toggleState === 4 && styles.active_tabs}
+                onClick={() => toggleTab(4)}
+              >
+                Rejected ({rejected?.length})
+              </span>
+            </div>
+            <div className={styles.navItem}>
+              <span
+                className={toggleState === 5 && styles.active_tabs}
+                onClick={() => toggleTab(5)}
+              >
+                Banned ({banned?.length})
+              </span>
+            </div>
+            <div className={styles.navItem}>
+              <span
+                className={toggleState === 6 && styles.active_tabs}
+                onClick={() => toggleTab(6)}
+              >
+                All ({all?.length})
+              </span>
+            </div>
           </div>
           <div className={styles.searchFilter}>
-            <InputName/>
+            <InputName />
             <InputBirth />
-          </div>
+          </div> 
         </div>
         <div className={styles.content}>
           <span className={toggleState === 1 && styles.active_content}>

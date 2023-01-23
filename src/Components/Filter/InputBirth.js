@@ -3,7 +3,7 @@ import { AllUserData } from "../../Context/UserContext";
 import styles from "./InputBirth.module.css";
 
 const InputBirth = () => {
-    const all = AllUserData();
+  const all = AllUserData();
   const [searchText, setSearchText] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
@@ -19,16 +19,16 @@ const InputBirth = () => {
   };
   return (
     <>
-        <div>
-      <input
-        type="text"
-        name=""
-        id=""
-        className={styles.search}
-        value={searchText}
-        onChange={handleSearch}
-        placeholder="Search by Birth..."
-      />
+      <div>
+        <input
+          type="text"
+          name=""
+          id=""
+          className={styles.search}
+          value={searchText}
+          onChange={handleSearch}
+          placeholder="Search by Birth..."
+        />
         <div>
           {searchResults.map((item) => (
             <div key={item.id}>
