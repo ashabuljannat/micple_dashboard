@@ -90,11 +90,11 @@ const AllUser = () => {
               </span>
             </div>
           </div>
+        </div>
           <div className={styles.searchFilter}>
             <InputName />
             <InputBirth />
           </div> 
-        </div>
         <div className={styles.content}>
           <span className={toggleState === 1 && styles.active_content}>
             {review && <Review allCountryUser={review} />}

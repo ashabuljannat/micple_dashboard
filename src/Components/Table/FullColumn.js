@@ -33,9 +33,9 @@ export const FullColumn = ({
         if (prevProgress === 100) {
           clearInterval(intervalId);
           setIsLoading(false);
-          setState([]);
-          setCity([]);
-          setUser([]);
+          setState(false);
+          setCity(false);
+          setUser(false);
           return 0;
         }
         return prevProgress + 10;

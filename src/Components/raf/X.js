@@ -47,14 +47,14 @@ const X = () => {
           const filteredData = city.user_report.find(
             (report) => report.user_id === searchText
           );
-          console.log(filteredData);
+          // console.log(filteredData);
 
-          setSearchResults(filteredData);
           
-          // if (filteredData) {
-          console.log(searchResults);
-          // }
-          console.log(filteredData);
+          if (filteredData) {
+            setSearchResults(filteredData);
+          // console.log(searchResults);
+          }
+          // console.log(filteredData);
         });
       });
     });
@@ -100,11 +100,14 @@ const X = () => {
 
         <div>
           {searchResults &&
-            searchResults?.map((item) => (
+            searchResults?.reports.map((item) => (
               <div key={item.id}>
-                <p>Name: {item.user_id}</p>
+                <p>Name: {item.report_sub}</p>
               </div>
             ))}
+            {
+              searchResults?.user_id
+            }
         </div>
       </div>
     </>

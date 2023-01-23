@@ -9,7 +9,7 @@
 }
 .menu {
   width: 100%;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 .tableNav {
   height: 40px; 
@@ -29,6 +29,7 @@
 }
 
 .nav .navItem {
+  height: 35px; margin: 3px 0;
   width: 130px;
   border-radius: 2px;
   background-color: #ffffff;
@@ -40,6 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+ 
   /* background-color: #ffffff; */
   /* box-shadow: 1px 1px 2px #6699f2; */
 }
@@ -83,4 +85,5 @@ tr {
 }
 .searchFilter {
   display: flex;
+  justify-content: flex-end;
 }

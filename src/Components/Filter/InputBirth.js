@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AllUserData } from "../../Context/UserContext";
 import styles from "./InputBirth.module.css";
+import { BiSearch } from "react-icons/bi";
 
 const InputBirth = () => {
   const all = AllUserData();
@@ -17,18 +18,22 @@ const InputBirth = () => {
     console.log(filteredData);
     setSearchResults(filteredData);
   };
+
   return (
     <>
       <div>
-        <input
-          type="text"
-          name=""
-          id=""
-          className={styles.search}
-          value={searchText}
-          onChange={handleSearch}
-          placeholder="Search by Birth..."
-        />
+        <div className={styles.searchField}>
+          <input
+            type="text"
+            name=""
+            id=""
+            className={styles.search}
+            value={searchText}
+            onChange={handleSearch}
+            placeholder="Search by Birth..."
+          />
+          <BiSearch className={styles.searchBtn} />
+        </div>
         <div>
           {searchResults.map((item) => (
             <div key={item.id}>

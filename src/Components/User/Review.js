@@ -63,14 +63,14 @@ const Review = ({ allCountryUser }) => {
                 <FullColumn
                   name={"Country"}
                   country={uniCountry}
+                  setState={setState}
+                  setCity={setCity}
+                  setUser={setUser}
                   filterState={filterState}
                 />
                 <FullColumn
                   name={"State"}
                   state={state}
-                  setState={setState}
-                  setCity={setCity}
-                  setUser={setUser}
                   filterCity={filterCity}
                 />
                 <FullColumn name={"City"} city={city} filterUser={filterUser} />

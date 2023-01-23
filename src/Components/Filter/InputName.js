@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { AllUserData } from "../../Context/UserContext";
-import styles from "./InputName.module.css";
+import styles from "./InputBirth.module.css";
+import { BiSearch } from "react-icons/bi";
+
+
 
 const InputName = () => {
   const all = AllUserData();
@@ -9,36 +12,36 @@ const InputName = () => {
   // console.log(all);
   const handleSearch = (e) => {
     setSearchText(e.target.value);
-    // console.log(searchText);
+    console.log(searchText);
     if (all) {
-      // all?.map((user) => {
-      //   console.log(user)
       const filteredData = all?.filter((item) => {
-        // console.log(item)
         return item.name.toLowerCase().includes(searchText.toLowerCase());
       });
-      console.log(filteredData);
+      // console.log(filteredData);
       setSearchResults(filteredData);
       // });
     }
   };
   return (
     <>
-      <div>
-        <input
-          value={searchText}
-          onChange={handleSearch}
-          placeholder="Search by name..."
-          type="text"
-          name=""
-          id=""
-          className={styles.search}
-        />
-        <div className={styles.filterData}>
-          {searchResults?.map((item) => (
-            <div key={item.id}>
-              <p>Name : {item.name}</p>
-              <p>Birth : {item.birth}</p>
+       <div>
+        <div className={styles.searchField}>
+          <input
+            type="text"
+            name=""
+            id=""
+            className={styles.search}
+            value={searchText}
+            onChange={handleSearch}
+            placeholder="Search by Name..."
+          />
+          <BiSearch className={styles.searchBtn} />
+        </div>
+        <div>
+          {searchResults.map((item) => (
+            <div key={item.id} className={styles.data}>
+              <p>Name: {item.name}</p>
+              <p>Birth: {item.birth}</p>
             </div>
           ))}
         </div>
