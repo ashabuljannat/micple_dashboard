@@ -17,7 +17,7 @@ height: 35px;  */
 .progress-bar {
   fill: none;
   stroke: #3498db;
-  stroke-width: 10;
+  stroke-width: 5px;
   stroke-linecap: round;
   stroke-dasharray: 0 100;
   transform: rotate(20deg);
@@ -43,7 +43,7 @@ height: 15px;
   background-color: #3498db;
   color: white;
   padding: 12px 20px;
-  border: none;
+  border: none; 
   border-radius: 4px;
   cursor: pointer;
 }

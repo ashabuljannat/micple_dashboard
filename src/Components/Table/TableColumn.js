@@ -11,7 +11,7 @@ function TableColumn({ data, filterState ,filterCity,filterUser}) {
         <div key={index} className={`t_c_Title ${clickedRow === index && "clicked"}`}>
           <div
             className={`t_c_Data`}
-            onClick={() => {              
+            onClick={() => {               
               setClickedRow(index);
               filterState && filterState(data.name);              
               filterCity && filterCity(data.name);

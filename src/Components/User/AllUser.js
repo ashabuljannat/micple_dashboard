@@ -9,7 +9,11 @@ import {
   UnderReview,
   Verified,
 } from "../../Context/UserContext";
-import Input from "../Filter/Input";
+import InputName from "../Filter/InputName";
+import InputBirth from "../Filter/InputBirth";
+
+
+
 
 const AllUser = () => {
   const review = UnderReview();
@@ -35,7 +39,7 @@ const AllUser = () => {
 
   // console.log(review);
   return (
-    <div className={styles.user}>
+    <div className={styles.user}>  
       <div className={styles.sidebar}></div>
       <div className={styles.menu}>
         <div className={styles.tableNav}>
@@ -77,9 +81,9 @@ const AllUser = () => {
               All ({all?.length})
             </span>
           </div>
-          <div className="searchFilter">
-            <Input placeholder={"Birth day"} />
-            <Input placeholder={"user id"} />
+          <div className={styles.searchFilter}>
+            <InputName/>
+            <InputBirth />
           </div>
         </div>
         <div className={styles.content}>
