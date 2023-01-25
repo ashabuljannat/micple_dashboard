@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Filter from "../Components/Filter/Filter";
 import X from "../Components/raf/X";
 import AllUser from "../Components/User/AllUser";
+import ShowData from "../Components/User/ShowData";
 
 
 const router = createBrowserRouter([
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/x",
     element: <X />,
+  },
+  {
+    path: "/show",
+    element: <ShowData />,
   },
   {
     path: "/filter",

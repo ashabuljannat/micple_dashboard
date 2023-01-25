@@ -343,19 +343,53 @@ const filteredData =
           });
 
 
+onClick={()=>console.log(11)}      
+            {console.log(item)}   
+          {  console.log(searchResults)}
+
+ <form>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" />
+            <input type="submit" />
+          </form> 
+
+           <div>
+          {searchResults.map((item) => (
+            <div key={item.id}>
+              <p>Name: {item}</p>
+            </div>
+          ))}
+        </div>   <BiSearch className={styles.searchBtn} />
+        
+            placeholder="Search by Birth..."       className={styles.search}
+
+   <tr>
+            <td className={styles.tData}>{user?.name}</td>
+            <td className={styles.tData}>{user?.key_id}</td>
+            <td className={styles.tData}>{user?.birth}</td>
+            <td className={styles.tData}>{user?.country}</td>
+            <td className={styles.tData}>{user?.state}</td>
+            <td className={styles.tData}>{user?.city}</td>
+            <td className={styles.tData}>{user?.gender}</td>
+            <td className={styles.tData}>{user?.postcode}</td>
+            <td className={styles.tData}>{user?.postcode}</td>
+            <td className={styles.tData}>{user?.email}</td>
+            <td className={styles.tData}>{user?.phone}</td>
+            <td className={styles.tData}>{user?.status}</td>
+          </tr>
+          className={styles.filCity}
+
+className={styles.searchFilter}  <h2>Under Review Users : {allCountryUser?.length}</h2>  className={styles.data} className={styles.searchP}
+
+   {  console.log(searchResults)}
+                 {console.log(item)}   // console.log(uniCountry);  <InputName />
+        <InputBirth />
 
 
-
-
-
-
-
-
-
-
-
-
-  
+   <Link state={item} to="/show" className={styles.searchP}>
+                    </Link>
+                         <Link state={item} to="/show" className={styles.searchP}>
+                    </Link>
 
 
 

@@ -9,8 +9,6 @@ import {
   UnderReview,
   Verified,
 } from "../../Context/UserContext";
-import InputName from "../Filter/InputName";
-import InputBirth from "../Filter/InputBirth";
 
 const AllUser = () => {
   const review = UnderReview();
@@ -20,7 +18,7 @@ const AllUser = () => {
   const verified = Verified();
   const all = AllUserData();
 
-  const [toggleState, setToggleState] = useState(1);
+  const [toggleState, setToggleState] = useState(1); 
   const [ip, setIp] = useState("");
   const [address, setAddress] = useState({});
 
@@ -91,10 +89,6 @@ const AllUser = () => {
             </div>
           </div>
         </div>
-          <div className={styles.searchFilter}>
-            <InputName />
-            <InputBirth />
-          </div> 
         <div className={styles.content}>
           <span className={toggleState === 1 && styles.active_content}>
             {review && <Review allCountryUser={review} />}

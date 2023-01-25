@@ -1,7 +1,6 @@
 .user {
   display: flex;
   flex-direction: row;
-  height: 100vh;
 }
 
 .sidebar {
@@ -9,10 +8,10 @@
 }
 .menu {
   width: 100%;
-  /* padding: 0 20px; */
+  padding: 0 20px;
 }
 .tableNav {
-  height: 40px; 
+  height: 40px;
   width: 95%;
   display: flex;
   justify-content: space-between;
@@ -29,7 +28,8 @@
 }
 
 .nav .navItem {
-  height: 35px; margin: 3px 0;
+  height: 35px;
+  margin: 3px 0;
   width: 130px;
   border-radius: 2px;
   background-color: #ffffff;
@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
- 
+
   /* background-color: #ffffff; */
   /* box-shadow: 1px 1px 2px #6699f2; */
 }
@@ -87,3 +87,61 @@ tr {
   display: flex;
   justify-content: flex-end;
 }
+.searchField {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(227, 222, 222);
+  width: 210px;
+  height: 30px;
+  border-radius: 3px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  /* border-bottom: 1px solid #2d68cf; */
+  /* color: #0247ba; */
+  font-size: 15px;
+  width: 160px;
+  height: 30px;
+  /* margin-right: 7px;
+  border-radius: 3px; */
+}
+.search::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+}
+.searchBtn {
+  color: gray;
+  cursor: pointer;
+  height: 30px;
+}
+.data {
+  max-height: 300px;
+  width: 200px;
+  background-color: rgb(240, 237, 237);
+  overflow-y: auto;
+  position: absolute;
+  padding-left: 8px;
+}
+.searchD {
+  display: flex;
+  /* width: 180px; */
+  flex-direction: column;
+  margin-bottom: 10px;
+  background-color: rgb(247, 247, 247);
+}
+.searchD p {
+  height: 25px;
+  margin: 0;
+}
+.searchP {
+  color: black;
+  text-decoration: none;
+  /* background-color: rgb(255, 255, 255); */
+}
+

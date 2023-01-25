@@ -572,5 +572,20 @@
         "country": "Pakistan",
         "postcode": "36912",
         "picture": "https://example.com/asimali.jpg"
+    },
+    {
+        "key_id": "54328",
+        "status": "banned",
+        "gender": "male",
+        "birth":"01/24/2023",
+        "name": "Asim Ali",
+        "email": "asimali@email.com",
+        "phone": "555-555-5569",
+        "city": "Quetta",
+        "state": "Balochistan",
+        "country": "Pakistan",
+        "postcode": "36912",
+        "picture": "https://example.com/asimali.jpg"
     }
+
 ]
