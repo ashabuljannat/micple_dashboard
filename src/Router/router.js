@@ -4,6 +4,7 @@ import TableX from "../Components/raf/TableX2";
 import X from "../Components/raf/X";
 import AllUser from "../Components/User/AllUser";
 import Post from "../page/Post/Post";
+import PostShow from "../page/Post/PostShow";
 
 
 
@@ -17,8 +18,8 @@ const router = createBrowserRouter([
     element: <Post />,
   },
   {
-    path: "/x",
-    element: <X />,
+    path: "/postShow",
+    element: <PostShow />,
   },
   {
     path: "/table",

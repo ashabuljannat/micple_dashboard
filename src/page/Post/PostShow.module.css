@@ -1,0 +1,60 @@
+.pDiv {
+  height: 380px;
+  width: 550px;
+  border: 5px solid #f0eeee;
+}
+.pHeader {
+  height: 60px;
+  background-color: #f0eeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.pHName {
+  display: flex;
+}
+.pPhoto {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+.hName h4,
+.hName h6 {
+  margin: 0;
+}
+
+.pIcon {
+  height: 13px;
+  width: 13px;
+  color: #0248ba;
+}
+.pMain {
+  height: 67%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(224, 177, 177); */
+}
+.pFooter {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(240, 238, 238);
+}
+.emoji{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.emoji p{
+    margin: 0;
+    font-size: 13px;
+}
+.emojiIcon{
+    height: 22px;
+    width: 22px;
+    color: #0248ba;
+}
