@@ -1,25 +1,29 @@
 .tTitle {
   cursor: pointer;
-  height: 25px; 
-  min-width: 100px;
+  height: 25px;
+  min-width: 110px;
   border: 1px solid #dddddd;
   padding: 6px;
   transition: 0.3s;
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 700;
 }
 .tTitleN {
   cursor: pointer;
   height: 25px;
-  min-width: 160px;
+  min-width: 145px;
   border: 1px solid #dddddd;
   padding: 6px;
   transition: 0.3s;
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 700;
 }
 .tData {
   font-size: 15px;
   font-weight: 400;
-
+  height: 20px;
+}
+.tDataAction {
+  padding: 0;
+  /* background-color: rgb(226, 130, 130); */
 }

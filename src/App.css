@@ -391,6 +391,39 @@ className={styles.searchFilter}  <h2>Under Review Users : {allCountryUser?.lengt
                          <Link state={item} to="/show" className={styles.searchP}>
                     </Link>
 
+ {console.log(item)}  target="_blank"   state={user} to={"/download"}
+
+
+     <button
+            style={{
+              padding: "5px 15px",
+              position: "absolute",
+              marginLeft: "830px",
+            }}
+            id={"pdfbtn"}
+          >
+          </button>  style={{ marginLeft: "20px" }}
+
+   const Fstate = () => {
+        console.log("state");
+      };
+
+       const all = AllUserData();
+  // console.log(all);
+  // useEffect(() => {
+  //   setCoState(all);
+  // }, []);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

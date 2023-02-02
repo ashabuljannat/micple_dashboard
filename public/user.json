@@ -1,6 +1,14 @@
 [
     {
         "key_id": "12345",
+        "post_category":{
+            "audio": [],
+            "video": [],
+            "files": [],
+            "photos": [],
+            "stories": [],
+            "states":[]
+        },
         "status": "approved",
         "birth":"25/4/1998",
         "gender": "male",
@@ -9,13 +17,14 @@
         "phone": "555-555-5555",
         "city": "New York",
         "state": "NY",
-        "country": "USA",
+        "country": "USA", 
         "postcode": "10001",
         "picture": "https://example.com/johnsmith.jpg"
     },
     {
         "key_id": "90123",
         "status": "approved",
+        "post_category":"audio",
         "birth":"25/7/1998",
         "gender": "female",
         "name": "Lin Mei",
@@ -30,6 +39,7 @@
     {
         "key_id": "67890",
         "status": "verified",
+        "post_category":"audio",
         "birth":"25/9/1998",
         "gender": "female",
         "name": "Emily Brown",
@@ -45,6 +55,7 @@
         "key_id": "10234",
         "status": "verified",
         "gender": "male",
+        "post_category":"video",
         "birth":"25/4/1997",
         "name": "Zhang Wei",
         "email": "zhangwei@email.com",
@@ -59,6 +70,7 @@
         "key_id": "98765",
         "status": "approved",
         "gender": "male",
+        "post_category":"video",
         "birth":"22/4/1998",
         "name": "Sergei Ivanov",
         "email": "sergeiivanov@email.com",
@@ -73,6 +85,7 @@
         "key_id": "87654",
         "status": "verified",
         "gender": "female",
+        "post_category":"status",
         "birth":"23/7/1998",
         "name": "Natalia Petrov",
         "email": "natalialpetrov@email.com",
@@ -87,6 +100,7 @@
         "key_id": "98765",
         "status": "approved",
         "gender": "male",
+        "post_category":"status",
         "birth":"25/4/1995",
         "name": "Ivan Petrov",
         "email": "ivanpetrov@email.com",
@@ -101,6 +115,7 @@
         "key_id": "13579",
         "status": "rejected",
         "gender": "male",
+        "post_category":"status",
         "name": "Michael Davis",
         "birth":"25/6/1995",
         "email": "michaeldavis@email.com",
@@ -114,6 +129,7 @@
     {
         "key_id": "24680",
         "status": "review",
+        "post_category":"video",
         "gender": "female",
         "birth":"25/4/1999",
         "name": "Jessica Wilson",
@@ -128,6 +144,7 @@
     {
         "key_id": "36912",
         "status": "banned",
+        "post_category":"status",
         "gender": "male",
         "birth":"25/4/1995",
         "name": "David Anderson",
@@ -143,6 +160,7 @@
         "key_id": "45678",
         "status": "approved",
         "gender": "male",
+        "post_category":"audio",
         "birth":"2/4/1998",
         "name": "Mohammed Ali",
         "email": "mohammedali@email.com",
@@ -157,6 +175,7 @@
         "key_id": "56789",
         "status": "verified",
         "gender": "female",
+        "post_category":"video",
         "birth":"25/4/1997",
         "name": "Fatima Ahmed",
         "email": "fatimaahmed@email.com",
@@ -170,6 +189,7 @@
     {
         "key_id": "67890",
         "status": "rejected",
+        "post_category":"status",
         "gender": "male",
         "name": "Wang Li",
         "birth":"25/4/1985",
@@ -184,6 +204,7 @@
     {
         "key_id": "78901",
         "status": "review",
+        "post_category":"status",
         "gender": "female",
         "birth":"25/4/1988",
         "name": "Sophie Dupont",
@@ -198,6 +219,7 @@
     {
         "key_id": "89012",
         "status": "banned",
+        "post_category":"status",
         "gender": "male",
         "birth":"25/4/1995",
         "name": "Juan Perez",
@@ -213,6 +235,7 @@
         "key_id": "98765",
         "status": "approved",
         "gender": "male",
+        "post_category":"video",
         "birth":"25/1/1995",
         "name": "Ramesh Patel",
         "email": "rameshpatel@email.com",
@@ -227,6 +250,7 @@
         "key_id": "87654",
         "status": "verified",
         "gender": "female",
+        "post_category":"audio",
         "birth":"5/4/1995",
         "name": "Fatima Khan",
         "email": "fatimakhan@email.com",
@@ -240,6 +264,7 @@
     {
         "key_id": "76543",
         "status": "rejected",
+        "post_category":"status",
         "gender": "male",
         "birth":"25/8/1995",
         "name": "Akbar Ali",
@@ -254,6 +279,7 @@
     {
         "key_id": "65430",
         "status": "review",
+        "post_category":"status",
         "gender": "female",
         "birth":"25/3/1995",
         "name": "Sonia Gupta",
@@ -269,6 +295,7 @@
         "key_id": "54327",
         "status": "banned",
         "gender": "male",
+        "post_category":"status",
         "birth":"20/4/1995",
         "name": "Imran Khan",
         "email": "imrankhan@email.com",
@@ -283,6 +310,7 @@
         "key_id": "98765",
         "status": "approved",
         "gender": "male",
+        "post_category":"status",
         "birth":"23/6/1995",
         "name": "Md. Hasan",
         "email": "mdhasan@email.com",
@@ -296,6 +324,7 @@
     {
         "key_id": "87654",
         "status": "verified",
+        "post_category":"audio",
         "gender": "female",
         "birth":"25/4/1999",
         "name": "Fatema Khatun",
@@ -311,6 +340,7 @@
         "key_id": "76543",
         "status": "rejected",
         "gender": "male",
+        "post_category":"file",
         "birth":"25/11/1996",
         "name": "Abdul Karim",
         "email": "abdulkarim@email.com",
@@ -324,6 +354,7 @@
     {
         "key_id": "65431",
         "status": "review",
+        "post_category":"status",
         "gender": "female",
         "birth":"18/8/1995",
         "name": "Rokeya Begum",
@@ -338,6 +369,7 @@
     {
         "key_id": "54322",
         "status": "banned",
+        "post_category":"status",
         "gender": "male",
         "birth":"25/1/1995",
         "name": "Md. Rashed",
@@ -352,6 +384,7 @@
     {
         "key_id": "54325",
         "status": "approved",
+        "post_category":"file",
         "gender": "male",
         "birth":"25/9/1995",
         "name": "Abdul Karim",
@@ -367,6 +400,7 @@
         "key_id": "65432",
         "status": "verified",
         "gender": "female",
+        "post_category":"status",
         "birth":"26/4/1988",
         "name": "Nazia Islam",
         "email": "naziaislam@email.com",
@@ -381,6 +415,7 @@
         "key_id": "65482",
         "status": "verified",
         "gender": "female",
+        "post_category":"file",
         "birth":"26/4/1978",
         "name": "Sufia Islam",
         "email": "sufia@email.com",
@@ -394,6 +429,7 @@
     {
         "key_id": "76543",
         "status": "rejected",
+        "post_category":"status",
         "gender": "male",
         "birth":"23/1/1995",
         "name": "Mohammed Rafiq",
@@ -408,6 +444,7 @@
     {
         "key_id": "87654",
         "status": "review",
+        "post_category":"file",
         "gender": "female",
         "birth":"25/3/1991",
         "name": "Nazneen Begum",
@@ -422,6 +459,7 @@
     {
         "key_id": "98765",
         "status": "banned",
+        "post_category":"photo",
         "gender": "male",
         "birth":"25/4/1983",
         "name": "Salahuddin Ahmed",
@@ -437,6 +475,7 @@
         "key_id": "98765",
         "status": "approved",
         "gender": "male",
+        "post_category":"photo",
         "birth":"25/4/1987",
         "name": "Rajesh Patel",
         "email": "rajeshpatel@email.com",
@@ -448,8 +487,9 @@
         "picture": "https://example.com/rajeshpatel.jpg"
     },
     {
-        "key_id": "87654",
+        "key_id": "874654",
         "status": "verified",
+        "post_category":"photo",
         "gender": "female",
         "birth":"25/8/1984",
         "name": "Priya Sharma",
@@ -463,6 +503,7 @@
     },
     {
         "key_id": "76543",
+        "post_category":"file",
         "status": "rejected",
         "gender": "male",
         "birth":"25/11/1986",
@@ -479,6 +520,7 @@
         "key_id": "65433",
         "status": "review",
         "gender": "female",
+        "post_category":"photo",
         "birth":"25/11/1984",
         "name": "Smita Desai",
         "email": "smitadesai@email.com",
@@ -493,6 +535,7 @@
         "key_id": "54327",
         "status": "banned",
         "gender": "male",
+        "post_category":"photo",
         "birth":"28/11/1995",
         "name": "Ramesh Kumar",
         "email": "rameshkumar@email.com",
@@ -506,6 +549,7 @@
     {
         "key_id": "98765",
         "status": "approved",
+        "post_category":"file",
         "gender": "male",
         "birth":"2/12/1995",
         "name": "Ahmed Khan",
@@ -520,6 +564,7 @@
     {
         "key_id": "87654",
         "status": "verified",
+        "post_category":"photo",
         "gender": "female",
         "birth":"25/12/1985",
         "name": "Fatima Begum",
@@ -532,8 +577,9 @@
         "picture": "https://example.com/fatimabegum.jpg"
     },
     {
-        "key_id": "76543",
+        "key_id": "765435",
         "status": "rejected",
+        "post_category":"photo",
         "gender": "male",
         "birth":"20/4/1977",
         "name": "Imran Khan",
@@ -547,6 +593,7 @@
     },
     {
         "key_id": "65434",
+        "post_category":"photo",
         "status": "review",
         "gender": "female", 
         "birth":"12/5/1979",
@@ -562,6 +609,7 @@
     {
         "key_id": "54320",
         "status": "banned",
+        "post_category":"file",
         "gender": "male",
         "birth":"25/12/1973",
         "name": "Asim Ali",
@@ -576,6 +624,7 @@
     {
         "key_id": "54328",
         "status": "banned",
+        "post_category":"photo",
         "gender": "male",
         "birth":"01/24/2023",
         "name": "Asim Ali",

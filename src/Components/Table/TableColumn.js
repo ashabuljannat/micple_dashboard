@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./TableColumn.css";
 
+
 function TableColumn({ data, filterState ,filterCity,filterUser}) {
   // console.log('t col',data);
   const [clickedRow, setClickedRow] = useState(null);
 
-  return ( 
+  return (  
     <>
       {data && data?.map((data, index) => (
         <div key={index} className={`t_c_Title ${clickedRow === index && "clicked"}`}>
@@ -22,7 +23,7 @@ function TableColumn({ data, filterState ,filterCity,filterUser}) {
           </div>
         </div>
       ))}
-    </> 
+    </>  
   );
 }
 

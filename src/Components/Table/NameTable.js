@@ -1,12 +1,12 @@
 import React from "react";
+import ActionButton from "../ActionButton/ActionButton";
 import styles from "./NameTable.module.css";
 
 const NameTable = ({ user, index }) => {
-  // console.log(data)
   return (
-    <>
-       <table key={index}> 
-       <tbody> 
+    <> 
+       <table key={user.email}> 
+       <tbody>   
         <tr>
           <td className={styles.tTitleN}>Name</td>
           <td className={styles.tTitle}>User Id</td>
@@ -17,8 +17,9 @@ const NameTable = ({ user, index }) => {
           <td className={styles.tTitle}>Email</td>
           <td className={styles.tTitle}>Phone</td>
           <td className={styles.tTitle}>Status</td>
-        </tr>
-        {user && user?.map((user, index) => (
+          <td className={styles.tTitle}>Action</td>
+        </tr> 
+        {user && user?.map((user, index) => ( 
           <>
             <tr key={index}>
               <td className={styles.tData}>{user?.name}</td>
@@ -30,6 +31,7 @@ const NameTable = ({ user, index }) => {
               <td className={styles.tData}>{user?.email}</td>
               <td className={styles.tData}>{user?.phone}</td>
               <td className={styles.tData}>{user?.status}</td>
+              <td className={styles.tDataAction}><ActionButton/></td>
             </tr>
           </>
         ))}

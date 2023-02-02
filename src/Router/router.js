@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import Filter from "../Components/Filter/Filter";
+import { DownloadPdf } from "../Components/Download/DownloadPdf";
+import TableX from "../Components/raf/TableX2";
 import X from "../Components/raf/X";
 import AllUser from "../Components/User/AllUser";
-import ShowData from "../Components/User/ShowData";
+import Post from "../page/Post/Post";
+
 
 
 const router = createBrowserRouter([
@@ -11,16 +13,20 @@ const router = createBrowserRouter([
     element: <AllUser />,
   },
   {
+    path: "/post",
+    element: <Post />,
+  },
+  {
     path: "/x",
     element: <X />,
   },
   {
-    path: "/show",
-    element: <ShowData />,
+    path: "/table",
+    element: <TableX />,
   },
   {
-    path: "/filter",
-    element: <Filter />,
+    path: "/download",
+    element: <DownloadPdf />,
   }
 
 ]);

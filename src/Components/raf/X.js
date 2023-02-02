@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./X.css";
-import { MdOutlineCancel } from "react-icons/md";
 import { AllUserData } from "../../Context/UserContext";
 
 const X = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [progress, setProgress] = useState(false);
   const [first, setFirst] = useState(false);
   const all = AllUserData();
 
@@ -69,7 +66,7 @@ const X = () => {
       setSearchResults(filteredData);
     }
   };
-
+ 
 
 
   // const handleSearch = (e) => {

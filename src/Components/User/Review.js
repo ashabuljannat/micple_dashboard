@@ -2,12 +2,9 @@ import React, { useEffect, useState } from "react";
 import { count_data } from "../../Context/Budge";
 import { FullColumn } from "../Table/FullColumn";
 import NameTable from "../Table/NameTable";
-import styles from "./User.module.css";
-import InputName from "../Filter/InputName";
-import InputBirth from "../Filter/InputBirth";
+import styles from "./Review.module.css";
 import ShowData from "./ShowData";
 import { BiSearch } from "react-icons/bi";
-import { Link } from "react-router-dom";
 
 const Review = ({ allCountryUser }) => {
   const [uniCountry, setUniCountry] = useState([]);
@@ -113,12 +110,15 @@ const Review = ({ allCountryUser }) => {
               searchNameResults?.map((item, index) => (
                 <div
                   key={index}
-                  className={styles.searchD}
-                  onClick={() => setShowData(item)}
+                  className={styles.searchDiv}
+                  onClick={() => {
+                    setShowData(item);
+                    setSearchNameResults(false);
+                  }}
                 >
                   <p>Name : {item.name}</p>
-                  <p className={styles.searchPt}>Birth : {item.birth}</p>
-                  <p className={styles.searchPt}>Country : {item.country}</p>
+                  <p>Birth : {item.birth}</p>
+                  <p>Country : {item.country}</p>
                 </div>
               ))}
           </div>
@@ -136,42 +136,36 @@ const Review = ({ allCountryUser }) => {
               searchDateResults?.map((item, index) => (
                 <div
                   key={index}
-                  className={styles.searchD}
-                  onClick={() => setShowData(item)}
+                  className={styles.searchDiv}
+                  onClick={() => {
+                    setShowData(item);
+                    setSearchDateResults(false);
+                  }}
                 >
                   <p>Name : {item.name}</p>
-                  <p className={styles.searchPt}>Birth : {item.birth}</p>
-                  <p className={styles.searchPt}>Country : {item.country}</p>
+                  <p>Birth : {item.birth}</p>
+                  <p>Country : {item.country}</p>
                 </div>
               ))}
           </div>
         </div>
       </div>
-      { showData &&  <ShowData user={showData} /> }
-     
+      {showData && <ShowData user={showData} />}
       <div className={styles.user}>
         <div className={styles.sidebar}></div>
         <div className={styles.menu}>
-          <div className={styles.content}>
-            <>
-              <div className={styles.fTable}>
-                <FullColumn
-                  name={"Country"}
-                  country={uniCountry}
-                  setState={setState}
-                  setCity={setCity}
-                  setUser={setUser}
-                  filterState={filterState}
-                />
-                <FullColumn
-                  name={"State"}
-                  state={state}
-                  filterCity={filterCity}
-                />
-                <FullColumn name={"City"} city={city} filterUser={filterUser} />
-                <NameTable user={user} />
-              </div>
-            </>
+          <div className={styles.fTable}> 
+            <FullColumn
+              name={"Country"}
+              country={uniCountry}
+              filterState={filterState}
+              setState={setState}
+              setCity={setCity}
+              setUser={setUser}
+            />
+            <FullColumn name={"State"} state={state} filterCity={filterCity} />
+            <FullColumn name={"City"} city={city} filterUser={filterUser} />
+            <NameTable user={user} />
           </div>
         </div>
       </div>

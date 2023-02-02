@@ -5,8 +5,6 @@ import NameTable from "./NameTable";
 import { BiReset } from "react-icons/bi";
 import { MdOutlineCancel } from "react-icons/md";
 
-// const all = AllUserData();
-
 export const FullColumn = ({
   name,
   country,
@@ -22,7 +20,6 @@ export const FullColumn = ({
 }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [progress, setProgress] = useState(false);
-  // console.log('user2nd',country);
 
   let intervalId;
   const startLoading = () => {
@@ -51,7 +48,7 @@ export const FullColumn = ({
 
   return (
     <>
-      <table className={styles.table2}>
+      <table>
         <tbody>
           <tr>
             <th className={styles.taTitle}>
@@ -87,11 +84,6 @@ export const FullColumn = ({
               </div>
             </th>
           </tr>
-          {/* <tr>
-            <th>
-              <Input />
-            </th>
-          </tr> */}
           <tr>
             <TableColumn data={country} filterState={filterState} />
           </tr>

@@ -18,21 +18,21 @@ const AllUser = () => {
   const verified = Verified();
   const all = AllUserData();
 
-  const [toggleState, setToggleState] = useState(1); 
+  const [toggleState, setToggleState] = useState(1);
   const [ip, setIp] = useState("");
   const [address, setAddress] = useState({});
 
   const toggleTab = (index) => {
     setToggleState(index);
   };
-
+ 
   useEffect(() => {
     fetch("http://api.ipify.org")
       .then((response) => response.text())
       .then((ip) => setIp(ip));
   }, []);
 
-  // console.log(review);
+  // console.log(review); 
   return (
     <div className={styles.user}>
       <div className={styles.sidebar}></div>

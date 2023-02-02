@@ -1,29 +1,11 @@
-.table2 {
-  /* height: auto;
-  width: 200px; */
-  /* text-align: center; */
-}
-table {
-  /* text-align: center; */
-  border-collapse: collapse;
-  margin-top: 50px;
-}
 .taTitle {
-  /* text-align: center; */
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-}
-th {  
+  height: 20px;
+  width: 160px;
   border: 1px solid #dddddd;
   padding: 8px;
-}
-td {
-  
-  border: 1px solid #dddddd;
-  padding: 8px;
-  cursor: pointer;
 }
 
 .reset {
@@ -83,5 +65,5 @@ svg {
 
 .progressBg,
 .progressBar {
-  stroke-width: 10;
+  stroke-width: 5;
 }
